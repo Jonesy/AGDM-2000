@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+	font-family: "helvetica";
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+div {
+	width: 50%;
+	height: 27%;
+	float: left;
+	
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+    -webkit-transform: rotate(90deg);
+	
+	border: 0.2em solid;
+	margin: -0.2em;
+	
+	background: white;
+	-webkit-transition: all 0.1s ease-out;
+}
+
+div.playing {
+	background: #00ADEE;
+}
