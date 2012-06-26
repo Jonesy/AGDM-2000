@@ -1,28 +1,76 @@
-html, body {
-	height: 100%;
-	font-family: "helvetica";
-
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
+@font-face {
+  font-family: "Novecentowide";
+  src: url("../../shared/assets/fonts/Novecentowide-Bold.otf") format("opentype");
 }
 
-div {
-	width: 50%;
-	height: 27%;
-	float: left;
-	
-	display: -webkit-box;
-	-webkit-box-align: center;
-	-webkit-box-pack: center;
-    -webkit-transform: rotate(90deg);
-	
-	border: 0.2em solid;
-	margin: -0.2em;
-	
-	background: white;
-	-webkit-transition: all 0.1s ease-out;
+html {
+  height: 100%;
+  margin:0px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  
+  font-family: "Novecentowide";
 }
 
-div.playing {
-	background: #00ADEE;
+body {
+  height:100%;
+  margin:0px;
+  -webkit-background-size: 100%;
+  background-image: url("../../shared/assets/images/iphone_background.png")
+}
+
+div.drumpad_container {
+  position:absolute;
+  top:155px;
+  left:25px;
+  height:270px;
+  width:270px;
+}
+
+div.drumpad {
+  width: 124px;
+  height: 83px;
+  float: left;
+  
+  background-image:url("../../shared/assets/images/iphone_buttonup.png");
+  -webkit-background-size: 100%;
+  
+  color:#9DA2A4;
+  text-shadow: 0px 2px 3px #DDD;
+  
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  margin: 3px 5px;
+}
+
+div.drumpad#playing {
+  background-image:url("../../shared/assets/images/iphone_buttondown.png");
+  color:#B91D18;
+  text-shadow: 0px 1px 1px #DDD;
+}
+
+/* iPad overrides */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background-image: url("../../shared/assets/images/ipad_background.png");
+  }
+  
+  div.drumpad_container {
+    top:330px;
+    left:66px;
+    width:650px;
+    height:565px;
+  }
+  
+  div.drumpad {
+    width:294px;
+    height:175px;
+    
+    background-image:url("../../shared/assets/images/ipad_buttonup.png");
+    font-size:200%;
+    margin:7px 12px;
+  }
 }

@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <script src="../appgyver/appgyver.js"></script>
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;"/>
+    <title>AGDM 2000</title>
+		<script src="../appgyver/appgyver.js"></script>
     
     <!-- to prevent webkit from caching css & javascript files -->
     <!-- include array of your css & javascript files here: -->
@@ -11,17 +13,20 @@
       JS_FILES = ["javascripts/application.js"];
     </script>
     <script src="../shared/javascripts/cache_buster.js"></script>
+
+
   </head>
   
   <body>
-    <h1>AGDM-2000</h1>
+    <div class="drumpad_container">
+      <div class="drumpad" data-sound="kick.wav">KICK</div>
+      <div class="drumpad" data-sound="snare.wav">SNARE</div>
+      <div class="drumpad" data-sound="hihat.wav">HI-HAT</div>
+      <div class="drumpad" data-sound="clap.wav">CLAP</div>
+      <div class="drumpad" data-sound="perc.wav">PERC 1</div>
+      <div class="drumpad" data-sound="perc2.wav">PERC 2</div>
+    </div>
     
-    <div data-sound="kick.wav">KICK</div>
-    <div data-sound="snare.wav">SNARE</div>
-    <div data-sound="hihat.wav">HI-HAT</div>
-    <div data-sound="clap.wav">CLAP</div>
-  	<div data-sound="perc.wav">PERCUSSION</div>
-  	<div data-sound="electro_kick.wav">ELECTRO KICK</div>
   </body>
   
 </html>
