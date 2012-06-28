@@ -5,7 +5,7 @@ document.ontouchmove = function(e) { e.preventDefault(); }
 var pads = document.querySelectorAll("div.drumpad");
 
 for (var i = 0; i < pads.length; i++) {
-  pads[i].addEventListener("touchstart", function() { 
+  pads[i].addEventListener("touchstart", function() {
     AG.media.play("Application/shared/assets/samples/" + this.getAttribute("data-sound"));
 	  this.id = 'playing';
   });
