@@ -1,7 +1,7 @@
-AGDM 2000 drum machine
+AGDM-2000 drum machine
 ========================
 
-This GitHub repository includes the source code and assets for the AGDM 2000 drum machine app. The app is meant to demonstrate a simple drum machine that is built with HTML5 and uses AppGyver's JavaScript API for native sound playback.
+This GitHub repository includes the source code and assets for the AGDM-2000 drum machine app. The app is meant to demonstrate a simple drum machine that is built with HTML5 and uses AppGyver's JavaScript API for native sound playback.
 
 For more information, visit the [http://www.appgyver.com](AppGyver website).
 
