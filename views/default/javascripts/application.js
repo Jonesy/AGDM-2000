@@ -2,16 +2,17 @@
 document.ontouchmove = function(e) { e.preventDefault(); }
 
 // make pads change color and play sound when tapped
-var pads = document.querySelectorAll("div.drumpad");
+var pads = document.querySelectorAll("div.drumpad_container > div");
 
 for (var i = 0; i < pads.length; i++) {
   pads[i].addEventListener("touchstart", function() {
-    AG.media.play("Application/shared/assets/samples/" + this.getAttribute("data-sound"));
-	  this.id = 'playing';
+    var soundFile = this.getAttribute("data-sound");
+    AG.media.play("Application/shared/assets/samples/" + soundFile);
+	  this.className = 'playing';
   });
 
   pads[i].addEventListener("touchend", function() {
-	  this.id = '';
+	  this.className = '';
   });
 
 };
