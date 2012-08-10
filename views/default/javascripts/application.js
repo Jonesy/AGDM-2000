@@ -8,11 +8,11 @@ for (var i = 0; i < pads.length; i++) {
   pads[i].addEventListener("touchstart", function() {
     var soundFile = this.getAttribute("data-sound");
     AG.media.play("Application/shared/assets/samples/" + soundFile);
-	  this.className = 'playing';
+	  this.classList.add('playing');
   });
 
   pads[i].addEventListener("touchend", function() {
-	  this.className = '';
+    this.classList.remove('playing');
   });
 
 };
